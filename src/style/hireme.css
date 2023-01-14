@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+.head {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.line {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    padding : 10px 15px;
+}
+
+.line hr {
+    background-color: rgb(164,164,164);
+    width: 100%;
+    height : 3px;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #A4A4A4;
+    margin-bottom: 50px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.banner span {
+    color: rgb(251,114,28);
+}
+
+.profilePicture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding : 0px 50px;
+    margin-bottom: 30px;
+}
+
+.contactIntro {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.contactIntro .intro {
+    width: 100%;
+}
+
+
+.introImg img {
+    width: 100%;
+}
+
+.contactMe {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contactMe .contactimage{
+    width: 100%;
+}
+
+.contactimage img {
+    width: 100%;
+}
+
+.form {
+    width: 100%;
+}
+
+.intro p {
+    font-size: 20px;
+}
+
+@media screen and (max-width : 930px) {
+    .contactIntro {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .introImg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contactimage {
+        display: none;
+    }
+
+    .contactMe {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form {
+        width: 90%;
+    }
+    .intro h1 {
+        font-size: 24px;
+    }
+    .intro p {
+        font-size: 20px;
+    }
+
+    .introImg img {
+        width: 100%;
+        margin : 30px 0;
+    }
+
+    .introImg {
+        padding: 10px;
+    }
+
+}
+
+@media screen and (max-width : 460px) {
+    .form {
+        width: 100%;
+    }
+
+    .intro h1 {
+        font-size: 18px;
+    }
+
+    .intro p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width : 400px) {
+    .intro h1 {
+        font-size: 18px;
+    }
+
+    .intro p {
+        font-size: 16px;
+    }
+}

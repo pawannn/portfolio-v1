@@ -1,0 +1,96 @@
+.homecard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 55px;
+    margin-bottom: 55px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+    
+}
+
+.homecard h1 {
+    margin-bottom : 20px
+}
+
+.homecard .bio {
+    font-size: 18px;
+}
+
+.Card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 260px;
+    width: 1100px;
+}
+
+.nameCard {
+    position: absolute;
+    left : 0;
+    z-index: 99;
+} 
+
+.nameCard h1 {
+    font-size: 1.875rem;
+}
+
+.nameCard p {
+    font-weight: 650;
+}
+
+.yellowCard {
+    position: absolute;
+    right: 0;
+    background-color: rgb(255,245,0);
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+    width:800px;
+    height: 250px;
+}
+
+@media screen and (max-width : 960px) {
+    .Card {
+        width: 600px;
+    }
+
+    .yellowCard {
+        left: 50%;
+        top : 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+
+    .nameCard {
+        position: static;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .nameCard h1 {
+        font-size: 24px;
+    }
+
+    .nameCard p {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+@media screen and ( max-width : 630px ) {
+    .homecard {
+        width: 80%;
+    }
+
+    .nameCard h1 {
+        font-size: 18px;
+    }
+
+    .nameCard p {
+        font-size: 14px;
+        padding: 2px;
+    }
+}

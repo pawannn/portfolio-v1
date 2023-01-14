@@ -1,0 +1,30 @@
+.footer {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: rgb(255,245,0);
+    flex-direction: column;
+    padding: 20px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.endLine {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap : 5px;
+}
+
+@media screen and (max-width : 530px) {
+    .footer {
+        align-items: center;
+        justify-content: center;
+    }
+}
