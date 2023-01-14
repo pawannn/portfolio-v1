@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './home'
 import Hireme from './hireme'
+import ContactForm from './components/contactForm'
 
 const router = createBrowserRouter([
   {
