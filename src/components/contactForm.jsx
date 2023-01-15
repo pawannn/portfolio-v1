@@ -4,7 +4,7 @@ import '../style/contactForm.css'
 const ContactForm = () => {
     return (
             <div className="container">
-                <form name="contactform" method="POST" >
+                <form name="contactform" method="post" >
                     <input type="hidden" name="contactform" value="contact" />
                     <div>
                         <p>Name</p>
