@@ -3,8 +3,8 @@ import '../style/contactForm.css'
 
 const ContactForm = () => {
     return (
+        <form name="contactform" method="POST" netlify netlify-honeypot="bot-field">
             <div className="container">
-                <form name="contactform" method="POST" netlify netlify-honeypot="bot-field">
                     <div>
                         <p>Name</p>
                         <input type = "text" name = "name" placeholder="Your Lovely Name" />
@@ -20,8 +20,8 @@ const ContactForm = () => {
                     <div>
                         <button type="submit">Say Hello!</button>
                     </div>
-                </form>
             </div>  
+        </form>
     )
 }
 
