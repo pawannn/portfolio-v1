@@ -15,7 +15,7 @@ const ContactForm = () => {
                     </div>
                     <div>
                         <p>Message</p>
-                        <textarea style = {{ resize : "none" }} placeholder="Lets Start the Conversation" name = "description"></textarea>
+                        <textarea style = {{ resize : "none" }} placeholder="Lets Start the Conversation" name = "message"></textarea>
                     </div>
                     <div>
                         <button type="submit">Submit</button>
