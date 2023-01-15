@@ -4,7 +4,7 @@ import '../style/contactForm.css'
 const ContactForm = () => {
     return (
             <div className="container">
-                <form name="contact" method="POST" data-netlify="true" >
+                <form name="contactform" method="POST" data-netlify="true" netlify >
                     <div>
                         <p>Name</p>
                         <input type = "text" name = "name" placeholder="Your Lovely Name" />
