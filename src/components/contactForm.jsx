@@ -4,7 +4,7 @@ import '../style/contactForm.css'
 const ContactForm = () => {
     return (
             <div className="container">
-                <form name = "contact" method = "POST" data-netlify = "true" onSubmit = "submit">
+                <form name = "contact" method = "POST" netlify >
                     <div>
                         <p>Name</p>
                         <input type = "text" placeholder="Your Lovely Name" name = "name"/>
@@ -18,7 +18,7 @@ const ContactForm = () => {
                         <textarea style = {{ resize : "none" }} placeholder="Lets Start the Conversation" name = "message"></textarea>
                     </div>
                     <div>
-                        <button type="submit">Submit</button>
+                        <button type="submit">Say Hello!</button>
                     </div>
                 </form>
             </div>  
