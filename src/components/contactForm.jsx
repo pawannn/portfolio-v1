@@ -4,7 +4,7 @@ import '../style/contactForm.css'
 const ContactForm = () => {
     return (
             <div className="container">
-                <form name="contactform" method="post" data-netlify="true" action = "../success">
+                <form name="contactform" method="post" data-netlify="true" action = "/#/success">
                     <input type = "text" hidden name = "form-name" value = "contactform"/>
                     <div>
                         <p>Name</p>
