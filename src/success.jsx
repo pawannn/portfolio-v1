@@ -1,7 +1,7 @@
 import React from "react"
-import './style/thankyou.css'
+import './style/success.css'
 
-const Thankyou = () => {
+const Success = () => {
     return (
         <div className="thankyou">
             <div className="thankyouimage">
@@ -38,4 +38,4 @@ const Thankyou = () => {
     )
 }
 
-export default Thankyou
+export default Success
