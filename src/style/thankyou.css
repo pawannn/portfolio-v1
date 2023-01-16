@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.thankyou {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.thankyoucontent {
+    width: 40%;
+    font-size: 18px;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.thankyouimage {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thankyoucontent button {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #8F4FCF;
+    color : white;
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+}
+
+.thankyoucontent p {
+    text-align: center;
+}
+
+.thankyoucontent button:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width : 700px) {
+    .thankyou {
+        flex-direction: column;
+        gap : 0;
+    }
+
+    .thankyoucontent{
+        width: 90%;
+    }
+
+    .thankyouimage {
+        width: 90%;
+        height: 300px;
+    }
+}

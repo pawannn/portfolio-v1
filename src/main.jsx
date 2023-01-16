@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './home'
 import Hireme from './hireme'
-import ContactForm from './components/contactForm'
+import Thankyou from './thankyou'
 
 const router = createBrowserRouter([
   {
@@ -14,6 +14,10 @@ const router = createBrowserRouter([
     path : '/hireme',
     element : <Hireme />
   },
+  {
+    path : '/thankyou',
+    element : <Thankyou />
+  }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
