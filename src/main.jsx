@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './home'
 import Hireme from './hireme'
 import Success from './success'
+import ContactForm from './components/contactForm'
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
   {
     path : '/success',
     element : <Success />
+  },
+  {
+    path : '/contactme',
+    element : <ContactForm />
   }
 ])
 
