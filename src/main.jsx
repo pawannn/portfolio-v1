@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     element : <Hireme />
   },
   {
-    path : '/thankyou',
+    path : '/success',
     element : <Success />
   }
 ])
