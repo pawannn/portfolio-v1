@@ -1,12 +1,17 @@
 import React from "react"
-import { useNavigate } from "react-router-dom";
+import { useForm } from '@formspree/react';
 import '../style/contactForm.css'
 
 const ContactForm = () => {
 
+    const [state, handleSubmit] = useForm("xnqyndzy");
+    if (state.succeeded) {
+        return window.location.href = "/success";
+    }
+
     return (
             <div className="container">
-                <form name="contactform" data-netlify="true" method="POST" action="/success">
+                <form name="contactform" onSubmit={ handleSubmit }>
                     <input type = "text" hidden name = "form-name" value = "contactform" />
                     <div>
                         <p>Name</p>
