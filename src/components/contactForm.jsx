@@ -1,19 +1,13 @@
-import React, { useHistory } from "react"
+import React from "react"
+import { useNavigate } from "react-router-dom";
 import '../style/contactForm.css'
 
 const ContactForm = () => {
 
-    const history = useHistory();
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        history.push('/success');
-    }
-
     return (
             <div className="container">
-                <form name="contactform" data-netlify="true" >
-                    <input type = "text" hidden name = "form-name" value = "contactform" method = "post" action = "/success"/>
+                <form name="contactform" data-netlify="true" id = "contact-form">
+                    <input type = "text" hidden name = "form-name" value = "contactform" />
                     <div>
                         <p>Name</p>
                         <input type = "text" name = "name" placeholder="Your Lovely Name" />
@@ -27,7 +21,10 @@ const ContactForm = () => {
                         <textarea style = {{ resize : "none" }} name = "message" placeholder="Lets Start the Conversation"></textarea>
                     </div>
                     <div>
-                        <button type="submit" onSubmit = { handleSubmit }>Say Hello!</button>
+                        <button type="submit" onClick = { (e) => {
+                            e.preventDefault();
+                            window.location.href = "/success"
+                        } }>Say Hello!</button>
                     </div>
                 </form>
             </div>  
