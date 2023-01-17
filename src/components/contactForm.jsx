@@ -21,10 +21,7 @@ const ContactForm = () => {
                         <textarea style = {{ resize : "none" }} name = "message" placeholder="Lets Start the Conversation"></textarea>
                     </div>
                     <div>
-                        <button type="submit" onClick = { (e) => {
-                            e.preventDefault();
-                            window.location.href = "/success"
-                        } }>Say Hello!</button>
+                        <button type="submit">Say Hello!</button>
                     </div>
                 </form>
             </div>  
