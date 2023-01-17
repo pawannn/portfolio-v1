@@ -1,11 +1,19 @@
-import React from "react"
+import React, { useHistory } from "react"
 import '../style/contactForm.css'
 
 const ContactForm = () => {
+
+    const history = useHistory();
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        history.push('/success');
+    }
+
     return (
             <div className="container">
-                <form name="contactform" method="post" data-netlify="true" action = "/success.html">
-                    <input type = "text" hidden name = "form-name" value = "contactform"/>
+                <form name="contactform" data-netlify="true" >
+                    <input type = "text" hidden name = "form-name" value = "contactform" method = "post" action = "/success"/>
                     <div>
                         <p>Name</p>
                         <input type = "text" name = "name" placeholder="Your Lovely Name" />
@@ -19,7 +27,7 @@ const ContactForm = () => {
                         <textarea style = {{ resize : "none" }} name = "message" placeholder="Lets Start the Conversation"></textarea>
                     </div>
                     <div>
-                        <button type="submit">Say Hello!</button>
+                        <button type="submit" onSubmit = { handleSubmit }>Say Hello!</button>
                     </div>
                 </form>
             </div>  
