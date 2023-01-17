@@ -6,7 +6,7 @@ const ContactForm = () => {
 
     return (
             <div className="container">
-                <form name="contactform" data-netlify="true" id = "contact-form" method="post">
+                <form name="contactform" data-netlify="true" id = "contact-form" method="post" onSubmit={(e) => { e.preventDefault();  window.location.href = "/success" }}>
                     <input type = "text" hidden name = "form-name" value = "contactform" />
                     <div>
                         <p>Name</p>
